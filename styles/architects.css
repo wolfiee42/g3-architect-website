@@ -22,6 +22,16 @@
 .text-lightGray{
     color: #727272;
 }
+.section-title {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+
+
+
+
 /* header section starts */
 header {
     background: rgba(255, 144, 14, 0.10);
@@ -32,12 +42,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.header-title {
-    color: #131313;
-    font-size: 2.8rem;
-    font-weight: 700;
 }
 
 nav>ul {
@@ -118,12 +122,6 @@ main {
     font-weight: 500;
 }
 
-.team-title-2 {
-    color: #131313;
-    font-size: 2.8rem;
-    font-weight: 700;
-}
-
 .team-title-3 {
     color: #FF900E;
     font-size: 2.8rem;
@@ -136,6 +134,56 @@ main {
     padding-bottom: 20px;
 }
 
+/* facts card section starts */
+.facts{
+    margin: 100px 0px;
+}
+.fact-description{
+    margin-bottom: 70px;
+}
+.fact-section{
+    margin-bottom:10px ;
+}
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cards{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 50px 30px;
+    text-align: center;
+}
+.card-facts{
+    font-size: 2.8rem;
+    color: #424242;
+    margin: 10px 0px;
+}
+.card-title{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #727272;
+    margin-top: 5px;
+}
+
+/* sponser section */
+.sponsors{
+    text-align: center;
+}
+.sponser-companys{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sponser-companys img{
+    width: 165px;
+    margin-bottom: 20px;
+}
+.sponsor-title{
+    margin-bottom: 20px;
+}
 /* main section ends*/
 
 /* media queries */
@@ -149,14 +197,21 @@ main {
     }
 
     nav,
-    .teams-container
+    .teams-container,
+    .facts-card-container,
+    .sponser-companys
     {
         flex-direction: column;
     }
     .teams-img-container{
         grid-template-columns: 1fr ;
     }
-    
+    .cards{
+        margin-bottom: 10px;
+    }
+    .facts{
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 577px) and (max-width: 922px) {
