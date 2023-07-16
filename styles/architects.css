@@ -19,7 +19,9 @@
     padding: 15px;
     cursor: pointer;
 }
-
+.text-lightGray{
+    color: #727272;
+}
 /* header section starts */
 header {
     background: rgba(255, 144, 14, 0.10);
@@ -56,7 +58,6 @@ nav ul li a {
 
 /* banner sec starts */
 
-.banner {}
 
 .banner-content {
     max-width: 800px;
@@ -68,43 +69,115 @@ nav ul li a {
     color: #131313;
     font-size: 4rem;
     font-weight: 700;
-    margin:100px 0px;
+    margin: 100px 0px;
 }
 
 .banner-description {
-    color: #727272;
     margin: -50px 0px 30px 0px;
 }
-.banner img{
+
+.banner img {
     width: 100%;
     margin-top: 20px;
 }
+
+/* banner section ends */
 /* header section ends */
 
+/* main section starts */
+main {
+    max-width: 1440px;
+    margin: 70px auto;
+}
 
+/* teams sections */
+.teams-container {
+    display: flex;
+    align-items: center;
+}
 
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
 
+.teams-content {
+    padding-right: 70px;
+    padding-left: 70px;
+
+}
+
+.teams-title {
+    padding: 20px 0px;
+
+}
+
+.team-title-1 {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.team-title-2 {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.team-title-3 {
+    color: #FF900E;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.teams-description {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+/* main section ends*/
 
 /* media queries */
 @media screen and (max-width: 576px) {
-    header{
+    header {
         padding: 20px;
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 2rem;
     }
-    nav{
+
+    nav,
+    .teams-container
+    {
         flex-direction: column;
     }
+    .teams-img-container{
+        grid-template-columns: 1fr ;
+    }
+    
 }
+
 @media screen and (min-width: 577px) and (max-width: 922px) {
-    header{
+    header {
         padding: 50px;
     }
-    .banner-title{
+
+    .banner-title {
         margin-bottom: 30px;
     }
-    nav{
+    .banner-description{
+        margin-top: 30px;
+    }
+
+    nav {
         flex-direction: column;
+    }
+    .teams-container{
+        flex-direction:column-reverse ;
+    }
+    .teams-content{
+        margin-bottom: 30px;
     }
 }
