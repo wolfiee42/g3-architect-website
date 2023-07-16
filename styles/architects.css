@@ -17,6 +17,7 @@
     background: #FF900E;
     border: none;
     padding: 15px;
+    cursor: pointer;
 }
 
 /* header section starts */
@@ -67,10 +68,43 @@ nav ul li a {
     color: #131313;
     font-size: 4rem;
     font-weight: 700;
+    margin:100px 0px;
 }
 
 .banner-description {
     color: #727272;
+    margin: -50px 0px 30px 0px;
 }
-
+.banner img{
+    width: 100%;
+    margin-top: 20px;
+}
 /* header section ends */
+
+
+
+
+
+/* media queries */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    .banner-title{
+        font-size: 2rem;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 922px) {
+    header{
+        padding: 50px;
+    }
+    .banner-title{
+        margin-bottom: 30px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
